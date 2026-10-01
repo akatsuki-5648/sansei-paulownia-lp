@@ -446,6 +446,10 @@ p,.lead,.use__d,.flow__d,.records span,.offer__list span,.faq .a,.src,.note,.cap
 @media (min-width:760px){.mat{grid-template-columns:1fr 1fr}}
 .mat figure{margin:0}
 .mat .ash{aspect-ratio:4/3;font-size:clamp(120px,14vw,220px)}
+/* ★縦長の写真は縦の枠に（3:4）。2枚で横幅を取りすぎないよう幅を絞る */
+.mat{max-width:780px;margin-left:auto;margin-right:auto}
+.mat img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:14px}
+.mat figcaption small{display:block;font-family:var(--sans);font-weight:400;font-size:14px;letter-spacing:.06em;color:var(--on-light-2);margin-top:.35em}
 .mat figcaption{font-family:var(--serif);font-weight:700;font-size:clamp(18px,1.6vw,23px);margin-top:.7em;color:var(--on-light)}
 .also{display:grid;gap:28px;align-items:center;margin-top:clamp(48px,8vh,90px)}
 @media (min-width:760px){.also{grid-template-columns:auto 1fr}}
@@ -457,11 +461,13 @@ p,.lead,.use__d,.flow__d,.records span,.offer__list span,.faq .a,.src,.note,.cap
 
 
 /* ★2026-10-01 公式ロゴ（★色は変えない＝生成りの板に乗せる・Hikârư「ちゃんとしたのつかわなきゃ」） */
-.brand{display:inline-flex;align-items:center;background:var(--paper);padding:7px 14px;border-radius:12px;box-shadow:0 8px 24px -14px rgba(0,0,0,.6)}
-.brand img{height:38px;width:auto}
-@media (max-width:640px){.brand{padding:6px 11px;border-radius:10px}.brand img{height:32px}}
-.ft__logo{display:inline-block;background:#fff;padding:14px;border-radius:14px;margin-bottom:clamp(36px,6vh,64px)}
-.ft__logo img{width:clamp(96px,10vw,132px);height:auto}
+/* ★公式ロゴ＝透過の白抜き（logo_header.png）を地にそのまま置く。板は敷かない（Hikârư 2026-10-01） */
+.brand{display:inline-flex;align-items:center}
+.brand img{height:52px;width:auto}
+@media (max-width:640px){.brand img{height:40px}}
+.ft__logo{display:inline-block;margin-bottom:clamp(36px,6vh,64px)}
+.ft__logo img{width:clamp(170px,14vw,216px);height:auto}
+.ft address span,.ft__copy span{display:inline-block}
 
 /* ---------- 動きを減らす設定 ---------- */
 @media (prefers-reduced-motion:reduce){
