@@ -486,3 +486,17 @@ p,.lead,.use__d,.flow__d,.records span,.offer__list span,.faq .a,.src,.note,.cap
 .tanzaku .title-s{font-family:var(--serif);font-weight:700;font-size:clamp(22px,2.4vw,34px);color:var(--on-light);margin-bottom:.5em}
 @media (max-width:640px){.mat figcaption{font-size:17px}.mat figcaption small{font-size:13px}}
 @media (min-width:960px){.mat{grid-template-columns:repeat(4,1fr)}}
+
+/* ★2026-10-01 夜③：特定商取引法に基づく表記のページ（★線を引かない＝面の濃淡で区切る） */
+.legal-pg .hd{background:var(--forest)}
+.legal-main{padding:clamp(130px,18vh,190px) var(--gut) var(--air)}
+.legal-main .title{margin-top:.35em}
+.legal-lead{margin-top:1.2em;max-width:42em}
+.legal{display:grid;gap:10px;max-width:920px;margin:clamp(28px,5vh,52px) 0 0}
+.legal div{display:grid;gap:.35em 2em;padding:1.1em 1.3em;border-radius:12px;background:var(--cream)}
+@media (min-width:760px){.legal div{grid-template-columns:11em 1fr;align-items:baseline}}
+.legal dt{font-weight:700;font-size:15px;letter-spacing:.08em;color:var(--on-light)}
+.legal dd{margin:0;font-size:16px;line-height:1.9;color:var(--on-light);word-break:auto-phrase;text-wrap:pretty}
+.legal dd span{display:inline-block}
+.legal a,.legal-back a{color:#3d5a2a;text-decoration:underline;text-underline-offset:.2em}
+.legal-back{margin-top:2.2em;font-size:16px}
