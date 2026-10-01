@@ -442,3 +442,6 @@ p,.lead,.use__d,.flow__d,.records span,.offer__list span,.faq .a,.src,.note,.cap
   .stage__frame img{transform:none}
   .hero__media img{transform:none}
 }
+
+/* ★2026-10-01 夜②：病気の欄を消したので比較は1列 */
+@media (min-width:900px){.compare--one{grid-template-columns:minmax(0,760px)}}

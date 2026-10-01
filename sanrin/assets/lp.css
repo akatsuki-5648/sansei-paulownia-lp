@@ -443,11 +443,10 @@ p,.lead,.use__d,.flow__d,.records span,.offer__list span,.faq .a,.src,.note,.cap
 }
 .plan{display:inline-block;margin-top:2.4em;font-size:12.5px;letter-spacing:.2em;padding:.4em 1.1em;border-radius:99px;box-shadow:inset 0 0 0 1px rgba(185,201,154,.45);color:var(--leaf)}
 .mat{display:grid;gap:clamp(18px,2vw,30px);margin-top:clamp(40px,7vh,80px)}
-@media (min-width:760px){.mat{grid-template-columns:1fr 1fr}}
 .mat figure{margin:0}
 .mat .ash{aspect-ratio:4/3;font-size:clamp(120px,14vw,220px)}
 /* ★縦長の写真は縦の枠に（3:4）。2枚で横幅を取りすぎないよう幅を絞る */
-.mat{max-width:780px;margin-left:auto;margin-right:auto}
+.mat{grid-template-columns:1fr 1fr}
 .mat img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:14px}
 .mat figcaption small{display:block;font-family:var(--sans);font-weight:400;font-size:14px;letter-spacing:.06em;color:var(--on-light-2);margin-top:.35em}
 .mat figcaption{font-family:var(--serif);font-weight:700;font-size:clamp(18px,1.6vw,23px);margin-top:.7em;color:var(--on-light)}
@@ -478,3 +477,12 @@ p,.lead,.use__d,.flow__d,.records span,.offer__list span,.faq .a,.src,.note,.cap
   .stage__frame img{transform:none}
   .hero__media img{transform:none}
 }
+
+/* ★2026-10-01 夜②：病気の欄を消したので比較は1列 */
+@media (min-width:900px){.compare--one{grid-template-columns:minmax(0,760px)}}
+.tanzaku{display:grid;gap:clamp(20px,3vw,48px);align-items:center;margin:clamp(36px,6vh,64px) 0 0}
+@media (min-width:760px){.tanzaku{grid-template-columns:minmax(220px,300px) 1fr}}
+.tanzaku img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:14px}
+.tanzaku .title-s{font-family:var(--serif);font-weight:700;font-size:clamp(22px,2.4vw,34px);color:var(--on-light);margin-bottom:.5em}
+@media (max-width:640px){.mat figcaption{font-size:17px}.mat figcaption small{font-size:13px}}
+@media (min-width:960px){.mat{grid-template-columns:repeat(4,1fr)}}
