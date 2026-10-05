@@ -468,3 +468,6 @@ p,.lead,.use__d,.flow__d,.records span,.offer__list span,.faq .a,.src,.note,.cap
 .policy-src{margin-top:1.2em;padding:1em 1.3em;border-radius:12px;background:var(--cream);font-size:15px;line-height:1.9;color:var(--on-light-2);max-width:860px}
 .policy-src a{color:#3d5a2a;text-decoration:underline;text-underline-offset:.2em}
 .legal-sub{display:block;font-size:.52em;margin-top:.35em;letter-spacing:.04em}
+
+/* ★2026-10-05：For you をメインの写真のすぐ下へ（朝岡さん 16:19）。下の入口は単独で立つ */
+.foryou{padding-top:clamp(64px,10vh,120px);padding-bottom:clamp(64px,10vh,120px)}
