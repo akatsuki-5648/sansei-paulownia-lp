@@ -471,3 +471,12 @@ p,.lead,.use__d,.flow__d,.records span,.offer__list span,.faq .a,.src,.note,.cap
 
 /* ★2026-10-05：For you をメインの写真のすぐ下へ（朝岡さん 16:19）。下の入口は単独で立つ */
 .foryou{padding-top:clamp(64px,10vh,120px);padding-bottom:clamp(64px,10vh,120px)}
+
+/* ★2026-10-05：公式サイト（sansei-japan.com）へ戻る道（Hikârư「LPから公式にもどるぺーじがないｗ」）
+   ロゴ＝公式サイトのトップへ／ヘッダーの右に「公式サイト」／フッターのリンクの先頭にも */
+.hd__r{display:flex;align-items:center;gap:clamp(14px,2.2vw,30px)}
+.hd__home{position:relative;padding:.55em 0;font-size:13px;letter-spacing:.14em;color:var(--on-dark);white-space:nowrap;transition:color .4s var(--ease)}
+.hd__home::after{content:"";position:absolute;left:0;right:0;bottom:.15em;height:1px;background:currentColor;opacity:.45;transition:opacity .4s var(--ease)}
+.hd__home:hover{color:var(--leaf)}
+.hd__home:hover::after{opacity:1}
+@media (max-width:640px){.hd__home{font-size:12px;letter-spacing:.1em}}
